@@ -46,6 +46,18 @@ h1, h2, h3 {
   border: none;
 }
 
+.navbar-default .navbar-toggle {
+  border: 2px solid #FFFCD1;
+  &:hover, &:focus {
+    background-color: black;
+    opacity: 0.7;
+  }
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #FFFCD1;
+}
+
 .navbar-brand {
   font-family: 'Norican', cursive;
   font-weight: 700;
