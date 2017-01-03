@@ -21,11 +21,12 @@
           </button>
           <%= link_to root_path, class: "navbar-brand" do %>
             </i><i class="fa fa-heartbeat" aria-hidden="true"></i>
-           FitLife 
+           FitLife
           <% end %>
         </div>
         <div class="collapse navbar-collapse" id="main-nav-collapse">
           <ul class="nav navbar-nav navbar-right">
+            <li><%= link_to "Sign Up", about_path %></li>
             <li><%= link_to "About", about_path %></li>
             <li><%= link_to "Contact Us", new_contact_path %></li>
           </ul>
