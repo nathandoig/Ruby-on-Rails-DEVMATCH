@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>FitLife</title>
+    <title>DevMatch</title>
     <%= csrf_meta_tags %>
     <link href="//fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Norican" rel="stylesheet">
@@ -20,8 +20,9 @@
             <span class="icon-bar"></span>
           </button>
           <%= link_to root_path, class: "navbar-brand" do %>
-            </i><i class="fa fa-heartbeat" aria-hidden="true"></i>
-           FitLife
+            <i class="fa fa-refresh fa-spin fa fa-fw"></i>
+            <span class="sr-only">Loading...</span>
+           DevMatch
           <% end %>
         </div>
         <div class="collapse navbar-collapse" id="main-nav-collapse">
