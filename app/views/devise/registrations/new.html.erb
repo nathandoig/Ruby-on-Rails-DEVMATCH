@@ -4,19 +4,16 @@
     <% if params[:plan] == '2' %>
       <h1 class="text-center">Premium Membership</h1>
       <p class="text-center">Sign up for the premium membership for $10 monthly to receive full access to the community and added benefits</p>
+      <div class="well">
+        <h2 class ="text-center">Sign up</h2>
+      <%= render "premium_form" %>
     <% else %>
       <h1 class="text-center">Basic Membership</h1>
       <p class="text-center">Sign up for free to gain basic access to the community</p>
-    <% end %>
-    
       <div class="well">
         <h2 class ="text-center">Sign up</h2>
-        
-        <% if params[:plan] == '2' %>
-          <%= render "premium_form" %>
-        <% else %>
-          <%= render "basic_form" %>
-        <% end %>
+      <%= render "basic_form" %>
+    <% end %>
         
         <%= render "devise/shared/links" %>
       </div>
