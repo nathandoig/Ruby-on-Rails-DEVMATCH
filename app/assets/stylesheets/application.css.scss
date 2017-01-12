@@ -40,6 +40,18 @@ background: linear-gradient(to left, #4784D3 , #3a7bd5); // W3C, IE 10+/ Edge, F
   padding-bottom: 100px;
 }
 
+.flash-container{
+  position: absolute;
+  width: 100%;
+}
+.alert-notice, .alert-alert{
+  text-align: center;
+  background: #FFFCD1;
+  border-color: #FFFCD1;
+  margin-top: -13px;
+  color: #3a7bd5;
+}
+
 .home-signup-links {
   margin-top: 35px;
 }
@@ -73,11 +85,6 @@ background: linear-gradient(to left, #4784D3 , #3a7bd5); // W3C, IE 10+/ Edge, F
     color: black;
     opacity: 0.7;
   }
-}
-
-//Alert notice disabling
-.alert-notice {
-  display: none;
 }
 
 
