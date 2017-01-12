@@ -2,10 +2,11 @@
 //Document ready.
 $(document).on('turbolinks:load', function(){
   var  theForm = $('#premium_form');
-  var submitBtn = $('#form-submit-btn');
+  var submitBtn = $('#form-signup-btn');
   
   //Set Stripe public key.
   Stripe.setPublishableKey( $ ('meta[name="stripe-key"]').attr('content') );
+  
   //When user clicks form submit btn, prevent default submission behaviour.
   submitBtn.click(function(event){
    event.preventDefault();
@@ -45,20 +46,11 @@ $(document).on('turbolinks:load', function(){
     //Send the card info to Stripe.
       Stripe.createToken({
         number: ccNum,
-        cvv: cvvNum,
+        cvc: cvcNum,
         exp_month: expMonth,
         exp_year: expYear
       }, stripeResponseHandler);
-      
     }
-    //Send the card info to Stripe.
-    Stripe.createToken({
-      number: ccNum,
-      cvv: cvvNum,
-      exp_month: expMonth,
-      exp_year: expYear
-    }, stripeResponseHandler);
-    
     return false;
   });
   
