@@ -4,15 +4,20 @@
 }
 
 .well.profile-block {
-    color: #FFFCD1;
+    color: #FFF;
     h3 {
       margin-top: 0;
     }
 }
 
-.well.profile-description, .profile-contact-info {
-    background-color:  #3a7bd5;
-    border-color: #4784D3;
+.well.profile-contact-info {
+    background-color: #5bc0de;
+    border-color: #46b8da;
+}
+
+.well.profile-description {
+    background-color:  #5cb85c;
+    border-color: #4cae4c;
 }
 
 .job-title-icon {
@@ -24,4 +29,11 @@
     background-color: #3a7bd5;
     color: #FFFCD1;
     text-align: center;
+}
+
+//User index styles
+.user-index-avatar {
+    width: 132px;
+    height: 132px;
+    border-radius: 50%;
 }
