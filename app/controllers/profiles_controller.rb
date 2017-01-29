@@ -50,7 +50,9 @@ class ProfilesController < ApplicationController
     
     def only_current_user
       @user = User.find( params[:user_id] )
-      flash[:error] = "You cannot edit other user's profiles."
-      redirect_to(root_url) unless @user == current_user
+      if(@user != current_user)
+        flash[:error] = "You cannot edit other user's profiles."
+        redirect_to(root_url)
+      end
     end
 end
